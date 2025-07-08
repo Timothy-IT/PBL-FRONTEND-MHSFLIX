@@ -35,12 +35,12 @@ MHS Flix adalah aplikasi streaming film mirip Netflix yang dibuat sebagai tugas 
 
 ## 👨‍💻👩‍💻 Anggota Kelompok
 
-- Nama Anggota 1
-- Nama Anggota 2
-- Nama Anggota 3
-- Nama Anggota 4
+- Timothy William
+- Irvani Heldi Fauzan
+- M. Putra Ariyoan
+- M. Ilham Pratama Lubis
 
-*(Silakan lengkapi dengan nama kelompokmu.)*
+
 
 ## ✨ Fitur Utama
 
