@@ -1,0 +1,111 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KDrama Netflix Style</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="src/css/film.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="logo">MHSFLIX</a>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="film.html">Movie</a></li>
+          <li class="nav-item"><a href="pricing.html">Subscription</a></li>
+          <li class="nav-item"><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+      <div class="search-filter">
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for KDramas..."
+          />
+          <button id="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+
+      <h2 class="section-title">Popular KDramas</h2>
+      <div class="movies-grid" id="moviesGrid"></div>
+      <div id="noResults" class="no-results" style="display: none">
+        <i class="fa-solid fa-film"></i>
+        <p>No KDramas found matching your search criteria.</p>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="movieModal">
+      <div class="modal-content">
+        <span class="modal-close" id="closeModal"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+        <div class="modal-header">
+          <img
+            class="modal-backdrop"
+            id="modalBackdrop"
+            src=""
+            alt="Movie backdrop"
+          />
+          <div class="modal-overlay">
+            <h2 class="modal-title" id="modalTitle">Movie Title</h2>
+            <div class="modal-meta">
+              <div class="modal-year" id="modalYear">
+                <i class="fa-regular fa-calendar"></i> 2023
+              </div>
+              <div class="modal-rating">
+                <span class="rating-star"
+                  ><i class="fa-solid fa-star"></i
+                ></span>
+                <span id="modalRating">8.5</span>
+              </div>
+            </div>
+            <div class="modal-genres" id="modalGenres"></div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="modal-synopsis" id="modalSynopsis">
+            Synopsis will be displayed here.
+          </div>
+          <div class="modal-details">
+            <div class="detail-section">
+              <h3><i class="fa-solid fa-users"></i> Cast</h3>
+              <div class="detail-list" id="modalCast"></div>
+            </div>
+            <div class="detail-section">
+              <h3><i class="fa-solid fa-video"></i> Director</h3>
+              <div class="detail-list" id="modalDirector"></div>
+            </div>
+            <div class="detail-section">
+              <h3><i class="fa-solid fa-pen"></i> Writer</h3>
+              <div class="detail-list" id="modalWriter"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
